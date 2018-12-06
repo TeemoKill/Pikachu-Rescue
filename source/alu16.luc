@@ -1,0 +1,81 @@
+module alu16 (
+    input a[16],  // input a
+    input b[16],  // input b
+    input alufn[6], // control code alufn
+
+    output out[16] // output
+  ) {
+  
+  always {
+    case(alufn[5:4]) {
+    
+      b00: // adder
+          case(alufn[1:0]) {
+              b00:
+                  out = a + b;
+              b01:
+                  out = a - b;
+              b10:
+                  out = a * b;
+              b11:
+                  out = a / b;
+            
+              default:
+                  out = 0;
+          }
+      
+      b01: // boolean
+          case(alufn[3:0]) {
+              b1000: // AND 
+                  out = a & b;
+              b1110: // OR 
+                  out = a | b;
+              b0110: // XOR 
+                  out = a ^ b;
+              b1010: // LDR 
+                  out = a;
+              b0001:  //NOR 
+                  out = ~(a | b);
+              b0111:   //NAND 
+                  out = ~(a & b);
+              b1001:   //XNOR 
+                  out = ~(a ^ b);
+        
+              default:
+                  out = 0;
+          }
+        
+      b10: // shift
+          case(alufn[1:0]) {
+              b00: // shift left
+                  out = a << b;
+              b01: // shift right 
+                  out = a >> b;
+              b11: // shift right arithmetic
+                  out = $signed(a) >>> b;
+      
+              default: // set to be a
+                  out = a;
+          }
+        
+      b11: // comparator
+          case(alufn[2:1]) {
+              b00: // not used 
+                  out = 0;
+              b01: // compare equal
+                  out = (a == b);
+              b10: // compare less than
+                  out = (a < b);
+              b11: // compare less than equal
+                  out = (a <= b);
+            
+              default:
+                  out = 0; // default to zero
+                }
+        
+      default:
+          out = 0;
+    }
+    
+  }
+}

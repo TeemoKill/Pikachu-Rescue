@@ -1,0 +1,90 @@
+module gameSelf (
+    input clk,  // clock
+    input rst,  // reset
+    input eliminate,
+    input eliminatePosition[4],
+    input random[32],
+    output array[6][9],
+    output sound
+  ) {
+  
+  const SOLVELENGTH = 6;
+  const SOLVELENGTHMINUSONE = SOLVELENGTH - 1;
+  const MERGELENGTH = 2;
+  
+  sig mergePosition[4];
+  
+  .clk(clk){
+    .rst(rst){
+      dff solveArray[SOLVELENGTH][9];
+      dff mergeCounter[$clog2(SOLVELENGTH)];
+      
+    }
+  }
+
+  always {
+  
+    array = solveArray.q;
+    
+    mergePosition = SOLVELENGTHMINUSONE - mergeCounter.q;
+    
+    sound = 0;
+    if (solveArray.q[mergePosition][8] & solveArray.q[mergePosition-1][8]) {
+      if (solveArray.q[mergePosition] == solveArray.q[mergePosition-1]) {
+        solveArray.d[mergePosition][3:0] = solveArray.q[mergePosition][3:0] + 1;
+        solveArray.d[mergePosition-1] = 0;
+        sound = 1;
+      }
+    }
+    
+    
+    
+    if (~solveArray.q[5][8]) {
+      solveArray.d[5:1] =
+       solveArray.q[4:0];
+      solveArray.d[0] = 0;
+    }
+    if (~solveArray.q[4][8]) {
+      solveArray.d[4:1] =
+       solveArray.q[3:0];
+      solveArray.d[0] = 0;
+    }
+    if (~solveArray.q[3][8]) {
+      solveArray.d[3:1] =
+       solveArray.q[2:0];
+      solveArray.d[0] = 0;
+    }
+    if (~solveArray.q[2][8]) {
+      solveArray.d[2:1] =
+       solveArray.q[1:0];
+      solveArray.d[0] = 0;
+    }
+    if (~solveArray.q[1][8]) {
+      solveArray.d[1:1] =
+       solveArray.q[0:0];
+      solveArray.d[0] = 0;
+    }
+    
+    
+    
+    if (~solveArray.q[0][8]) {
+      solveArray.d[0][8] = 1;
+      solveArray.d[0][7:4] = random - (random / 4 * 4);
+      solveArray.d[0][3:0] = 1;
+    }
+    
+    
+    
+    
+    
+    
+    if (eliminate) {
+      solveArray.d[eliminatePosition] = 0;
+    }
+    
+    mergeCounter.d = mergeCounter.q + 1;
+    if (mergeCounter.q == SOLVELENGTH - MERGELENGTH + 1) {
+      mergeCounter.d = 0;
+    }
+  }
+}

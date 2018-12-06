@@ -1,0 +1,31 @@
+module button #(
+    GAP = 200 : GAP > 0,
+    CLOCK_FREQUENCY = 50000000 / 16
+  )(
+    input clk,  // clock
+    input in,  // reset
+    output out
+  ) {
+  
+  .clk(clk) {
+    dff gap_counter[$clog2(CLOCK_FREQUENCY * GAP / 1000)];
+    edge_detector buffer(#RISE(1), #FALL(0));
+    edge_detector rise(#RISE(1), #FALL(0));
+  }
+
+  always {
+  
+    buffer.in = in;
+  
+    rise.in = 0;
+    if (|gap_counter.q) {
+      gap_counter.d = gap_counter.q - 1;
+    } else {
+      if (buffer.out) {
+        gap_counter.d = CLOCK_FREQUENCY * GAP / 1000;
+        rise.in = 1;
+      }
+    }
+    out = rise.out;
+  }
+}

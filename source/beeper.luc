@@ -1,0 +1,50 @@
+module beeper #(
+    TIME = 1000 : TIME > 0
+    )(
+    input clk,  // clock
+    input rst,  // reset
+    input in,
+    input frequency,
+    output wave
+  ) {
+  
+  const TIMER_VALUE = 50000; // * TIME;
+  const FREQUENCY_COUNTER_VALUE = 25000000;
+  
+  .clk(clk) {
+  
+    edge_detector beep_cond(#RISE(1), #FALL(0));
+  
+    .rst(rst) {
+    
+      dff timer[$clog2(TIMER_VALUE)];
+      dff frequency_counter[$clog2(TIMER_VALUE)];
+      dff sound[1];
+      dff voltage[1];
+    }
+  }
+
+  always {
+  
+    beep_cond.in = in;
+    
+    wave = voltage.q == 1 && sound.q == 1;
+    
+    if (|timer.q) {
+      timer.d = timer.q - 1;
+      sound.d = 1;
+    } else {
+      sound.d = 0;
+    }
+    
+    if (beep_cond.out) {
+      timer.d = TIMER_VALUE;
+    }
+    
+    frequency_counter.d = frequency_counter.q - 1;
+    if (frequency_counter.q == 0) {
+      frequency_counter.d = FREQUENCY_COUNTER_VALUE / frequency;
+      voltage.d = ~voltage.q;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+module pwm_led #(
+    WIDTH = 8 : WIDTH > 0 // resolution of PWM counter
+  )(
+    input clk,  // clock
+    input rst,  // reset
+    input color[3*WIDTH], // duty cycle value
+    output rgb_pulse[3]
+  ) {
+  
+  .clk(clk), .rst(rst) {
+    dff ctr[WIDTH];
+  }
+
+  always {
+    rgb_pulse[0] = ctr.q < color[23:16];
+    rgb_pulse[1] = ctr.q < color[15:8];
+    rgb_pulse[2] = ctr.q < color[7:0];
+    
+    ctr.d = ctr.q + 1;
+  }
+}

@@ -1,0 +1,46 @@
+module multi_led (
+    input clk,                // clock
+    input rst,                // reset
+    input colors [6][4], // values to show
+    output led_pulse [6][3]           // LED segments
+  ) {
+  
+  const RED = 24hff0800;
+  const YELLOW = 24hff7700;
+  const GREEN = 24h00dd00;
+  const PURPLE = 24hff0099;
+  
+  sig color_set[4][24];
+  
+  
+  // number of bits required to store DIGITS-1
+  .clk(clk) {
+    .rst(rst) {
+      pwm_led led0;
+      pwm_led led1;
+      pwm_led led2;
+      pwm_led led3;
+      pwm_led led4;
+      pwm_led led5;
+    }
+  }
+  
+  always {
+  
+    color_set = {RED, YELLOW, GREEN, PURPLE};
+  
+    led0.color = color_set[colors[0]];
+    led1.color = color_set[colors[1]];
+    led2.color = color_set[colors[2]];
+    led3.color = color_set[colors[3]];
+    led4.color = color_set[colors[4]];
+    led5.color = color_set[colors[5]];
+    
+    led_pulse[0] = led0.rgb_pulse;
+    led_pulse[1] = led1.rgb_pulse;
+    led_pulse[2] = led2.rgb_pulse;
+    led_pulse[3] = led3.rgb_pulse;
+    led_pulse[4] = led4.rgb_pulse;
+    led_pulse[5] = led5.rgb_pulse;
+  }
+}

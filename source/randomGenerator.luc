@@ -1,0 +1,17 @@
+module randomGenerator (
+    input clk,  // clock
+    input rst,  // reset
+    output out[4]
+  ) {
+  
+  dff random[8](.clk(clk), .rst(rst));
+  
+  sig rs[4];
+
+  always {
+    random.d = random.q + 1;
+    
+    rs = random.q-(random.q/4*4);
+    out = rs;
+  }
+}

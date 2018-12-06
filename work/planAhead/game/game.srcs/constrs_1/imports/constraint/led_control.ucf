@@ -1,0 +1,59 @@
+
+NET "user_seg<0>" LOC = P51 | IOSTANDARD = LVTTL;
+NET "user_seg<1>" LOC = P41 | IOSTANDARD = LVTTL;
+NET "user_seg<2>" LOC = P35 | IOSTANDARD = LVTTL;
+NET "user_seg<3>" LOC = P33 | IOSTANDARD = LVTTL;
+NET "user_seg<4>" LOC = P30 | IOSTANDARD = LVTTL;
+NET "user_seg<5>" LOC = P27 | IOSTANDARD = LVTTL;
+NET "user_seg<6>" LOC = P24 | IOSTANDARD = LVTTL;
+
+NET "user_sel<0>" LOC = P22 | IOSTANDARD = LVTTL;
+NET "user_sel<1>" LOC = P17 | IOSTANDARD = LVTTL;
+NET "user_sel<2>" LOC = P15 | IOSTANDARD = LVTTL;
+NET "user_sel<3>" LOC = P12 | IOSTANDARD = LVTTL;
+NET "user_sel<4>" LOC = P10 | IOSTANDARD = LVTTL;
+NET "user_sel<5>" LOC = P8 | IOSTANDARD = LVTTL;
+
+NET "user_buttons<0>" LOC = P58 | IOSTANDARD = LVTTL | PULLDOWN;
+NET "user_buttons<1>" LOC = P67 | IOSTANDARD = LVTTL | PULLDOWN;
+NET "user_buttons<2>" LOC = P75 | IOSTANDARD = LVTTL | PULLDOWN;
+NET "user_buttons<3>" LOC = P79 | IOSTANDARD = LVTTL | PULLDOWN;
+NET "user_buttons<4>" LOC = P81 | IOSTANDARD = LVTTL | PULLDOWN;
+NET "user_buttons<5>" LOC = P83 | IOSTANDARD = LVTTL | PULLDOWN;
+
+
+NET "user_led<0>" LOC = P118 | IOSTANDARD = LVTTL;
+NET "user_led<1>" LOC = P116 | IOSTANDARD = LVTTL;
+NET "user_led<2>" LOC = P114 | IOSTANDARD = LVTTL;
+
+NET "user_led<3>" LOC = P111 | IOSTANDARD = LVTTL;
+NET "user_led<4>" LOC = P104 | IOSTANDARD = LVTTL;
+NET "user_led<5>" LOC = P101 | IOSTANDARD = LVTTL;
+
+NET "user_led<6>" LOC = P99 | IOSTANDARD = LVTTL;
+NET "user_led<7>" LOC = P97 | IOSTANDARD = LVTTL;
+NET "user_led<8>" LOC = P94 | IOSTANDARD = LVTTL;
+
+NET "user_led<9>" LOC = P92 | IOSTANDARD = LVTTL;
+NET "user_led<10>" LOC = P87 | IOSTANDARD = LVTTL;
+NET "user_led<11>" LOC = P84 | IOSTANDARD = LVTTL;
+
+NET "user_led<12>" LOC = P82 | IOSTANDARD = LVTTL;
+NET "user_led<13>" LOC = P80 | IOSTANDARD = LVTTL;
+NET "user_led<14>" LOC = P78 | IOSTANDARD = LVTTL;
+
+NET "user_led<15>" LOC = P74 | IOSTANDARD = LVTTL;
+NET "user_led<16>" LOC = P66 | IOSTANDARD = LVTTL;
+NET "user_led<17>" LOC = P57 | IOSTANDARD = LVTTL;
+
+
+NET "user_solve_button<0>" LOC = P85 | IOSTANDARD = LVTTL | PULLDOWN;
+
+
+NET "user_solvable<0>" LOC = P95 | IOSTANDARD = LVTTL;
+
+
+NET "beep_button" LOC = P102 | IOSTANDARD = LVTTL | PULLDOWN;
+
+
+NET "beep" LOC = P105 | IOSTANDARD = LVTTL;

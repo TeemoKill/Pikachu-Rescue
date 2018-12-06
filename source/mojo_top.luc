@@ -1,0 +1,159 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    input user_buttons[6],
+    input beep_button,
+    input user_solve_button[1],
+    //output user_led[8],
+    output array_seg[7],
+    output array_sel[6],
+    output led[8],
+    output array_led[6][3],
+    output user_solvable[1]
+    // output beep
+  ) {
+  
+  sig rst;                  // reset signal
+  sig game_rst;
+  sig eliminateSig;
+  sig eliminatePosition[4];
+  
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+    
+    
+    
+    .rst(rst) {
+    
+      dff slow_clk[32];
+      
+      // beeper twitter(#TIME(200));
+      
+      multi_seven_segment numbers;
+      
+      multi_led array_led_controller;
+      
+      // pwm rgb1;
+      // pwm rgb2;
+      // pwm rgb3;
+    }
+  }
+  
+  .clk(slow_clk.q[3]) {
+  
+    button button0;
+    button button1;
+    button button2;
+    button button3;
+    button button4;
+    button button5;
+    
+    button solve_button1;
+    button solve_button2;
+    
+    edge_detector game_reset(#RISE(1), #FALL(0));
+    
+    pn_gen rg(.rst(0), .next(1));
+    
+    gameSelf game(.rst(game_rst));
+  }
+  
+  .clk(slow_clk.q[6]) {
+  
+    .rst(0) {
+      fsm state = {PASS};
+    }
+  }
+  
+  always {
+    reset_cond.in = ~rst_n;   // input raw inverted reset signal
+    rst = reset_cond.out;     // conditioned reset
+    led = 8b0;
+    
+    rg.seed = slow_clk.q;
+    game_reset.in = 0; //io_dip[0][7];
+    game_rst = game_reset.out;
+    game.random = rg.num;
+    
+    button0.in = user_buttons[5];
+    button1.in = user_buttons[4];
+    button2.in = user_buttons[3];
+    button3.in = user_buttons[2];
+    button4.in = user_buttons[1];
+    button5.in = user_buttons[0];
+    
+    eliminateSig = button0.out |
+                   button1.out |
+                   button2.out |
+                   button3.out |
+                   button4.out |
+                   button5.out;
+    
+    array_led_controller.colors = {game.array[5][7:4],
+                             game.array[4][7:4],
+                             game.array[3][7:4],
+                             game.array[2][7:4],
+                             game.array[1][7:4],
+                             game.array[0][7:4]
+                             };
+    array_led = array_led_controller.led_pulse;
+    
+    game.eliminate = eliminateSig;
+    
+    solve_button1.in = user_solve_button[0];
+    solve_button2.in = 0; //io_dip[2][6];
+    
+    user_solvable[0] = solve_button1.out; // game.solvable[0];
+    
+
+    
+    numbers.values = {game.array[0][3:0],
+                      game.array[1][3:0],
+                      game.array[2][3:0],
+                      game.array[3][3:0],
+                      game.array[4][3:0],
+                      game.array[5][3:0]
+      };
+    
+    array_seg = numbers.seg;
+    array_sel = ~numbers.sel;
+    
+    /*
+    twitter.in = beep_button; // game.sound;
+    twitter.frequency = 2000;
+    beep = twitter.wave;
+    */
+    
+    
+    eliminatePosition = 0;
+    if (button0.out) {
+      eliminatePosition = 0;
+    }
+    if (button1.out) {
+      eliminatePosition = 1;
+    }
+    if (button2.out) {
+      eliminatePosition = 2;
+    }
+    if (button3.out) {
+      eliminatePosition = 3;
+    }
+    if (button4.out) {
+      eliminatePosition = 4;
+    }
+    if (button5.out) {
+      eliminatePosition = 5;
+    }
+    
+    game.eliminatePosition = eliminatePosition;
+    
+    //io_led[2][7:5] = c{game.solvable1, game.solvable2, game.solvable3};
+    
+    //io_led[0][5:0] = game.leds;   // connect the DIP switches to the LEDs
+    
+    slow_clk.d = slow_clk.q + 1;
+  }
+}
