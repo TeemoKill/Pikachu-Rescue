@@ -18,6 +18,8 @@ module seven_segment_decoder (
       10: segs = 7b1011011; // H
       11: segs = 7b0110111; // E
       12: segs = 7b0110010; // L
+      13: segs = 7b1011110; // N
+      14: segs = 7b0110110; // C
       default: segs = 7b0000000;
     }
   }

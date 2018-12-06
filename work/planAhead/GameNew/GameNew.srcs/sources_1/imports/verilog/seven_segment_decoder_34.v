@@ -53,6 +53,12 @@ module seven_segment_decoder_34 (
       4'hc: begin
         segs = 7'h32;
       end
+      4'hd: begin
+        segs = 7'h5e;
+      end
+      4'he: begin
+        segs = 7'h36;
+      end
       default: begin
         segs = 7'h00;
       end

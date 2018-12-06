@@ -9,6 +9,8 @@ module gameSelf_12 (
     input rst,
     input eliminate,
     input [3:0] eliminatePosition,
+    input solve1,
+    input solve0,
     output reg [53:0] array,
     output reg sound
   );
@@ -73,6 +75,12 @@ module gameSelf_12 (
     end
     if (eliminate) begin
       M_solveArray_d[(eliminatePosition)*9+8-:9] = 1'h0;
+    end
+    if (solve1) begin
+      M_solveArray_d[45+8-:9] = 1'h0;
+    end
+    if (solve0) begin
+      M_solveArray_d[36+8-:9] = 1'h0;
     end
     M_mergeCounter_d = M_mergeCounter_q + 1'h1;
     if (M_mergeCounter_q == 5'h05) begin

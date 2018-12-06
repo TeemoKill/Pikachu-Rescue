@@ -94,6 +94,8 @@ module mojo_top (
     alu.b = 0;
     alu.alufn = 0;
     
+    game.solve1 = 0;
+    game.solve0 = 0;
     game_rst = 0 | rst;
     
     problem_set.problem_count = problem_counter.q;
@@ -150,8 +152,8 @@ module mojo_top (
     
     data_segments.values = {gewei,
                             shiwei,
-                            problem.q[1][3:0],
-                            problem.q[0][3:0]
+                            problem.q[0][3:0],
+                            problem.q[1][3:0]
       };
     
     data_seg = data_segments.seg;
@@ -206,7 +208,7 @@ module mojo_top (
         numbers.values = {4hf, 4hf, 4hf, 4hf, 4hf, 4hf};
         data_segments.values = {4hf, 4hf, 4hf, 4hf};
         user_solvable = 0;
-        if (|user_buttons) {
+        if (eliminateSig) {
           state.d = state.PREPARE;
         }
         
@@ -215,6 +217,7 @@ module mojo_top (
         numbers.values = {4d0, 4d12, 4d12, 4d11, 4d10, 4hf};
         data_segments.values = {4hf, 4hf, 4hf, 4hf};
         user_solvable = 0;
+        game_rst = 1;
         
         if (solve_button_cond.out) {
           state.d = state.START1;
@@ -226,9 +229,9 @@ module mojo_top (
       state.START1:
         alu.a = game.array[5][3:0];
         alu.b = problem.q[1][3:0];
-        alu.alufn = 6b110110; // CMPEQ
+        alu.alufn = 6b110010; // CMPEQ
         first_ball_solvable.d = alu.out;
-        if (~problem.q[1][4]) {
+        if ((problem.q[1][4] == 0) | (problem.q[1][3:0] == 0)) {
           first_ball_solvable.d = 1;
         }
         state.d = state.START2;
@@ -236,9 +239,9 @@ module mojo_top (
       state.START2:
         alu.a = game.array[4][3:0];
         alu.b = problem.q[0][3:0];
-        alu.alufn = 6b110110; // CMPEQ
+        alu.alufn = 6b110010; // CMPEQ
         second_ball_solvable.d = alu.out;
-        if (~problem.q[0][4]) {
+        if ((problem.q[0][4] == 0) | (problem.q[0][3:0] == 0)) {
           second_ball_solvable.d = 1;
         }
         state.d = state.START3;
@@ -246,7 +249,7 @@ module mojo_top (
       state.START3:
         alu.a = first_ball_solvable.q;
         alu.b = second_ball_solvable.q;
-        alu.alufn = 6b010111; // NAND
+        alu.alufn = 6b011000; // AND
         problem_solvable.d = alu.out;
         state.d = state.START4;
         
@@ -262,6 +265,12 @@ module mojo_top (
         }
         
       state.SOLVE:
+        if (problem.q[1][4] == 1) {
+          game.solve1 = 1;
+        }
+        if (problem.q[0][4] == 1) {
+          game.solve0 = 1;
+        }
         problem.d = problem_set.problem_out;
         count_down.d = STEPS;
         state.d = state.NEXTPROBLEM;
@@ -276,9 +285,30 @@ module mojo_top (
       state.CHECK:
         if (count_down.q == 0) {
           state.d = state.LOSE;
-        }
-        if (problem_counter.q == 10) {
+        } else if (problem_counter.q == 3) {
           state.d = state.WIN;
+        } else if (start_button_dff.q) {
+          state.d = state.INIT;
+        } else {
+          state.d = state.START1;
+        }
+        
+      state.LOSE:
+        array_led_controller.colors = {4d3, 4d3, 4d3, 4d3, 4d3, 4d3};
+        numbers.values = {4hf, 4d11, 4d5, 4d0, 4d12, 4hf};
+        data_segments.values = {4hf, 4hf, 4hf, 4hf};
+        user_solvable = 0;
+        if (eliminateSig) {
+          state.d = state.PREPARE;
+        }
+        
+      state.WIN:
+        array_led_controller.colors = {4d1, 4d1, 4d1, 4d1, 4d1, 4d1};
+        numbers.values = {4hf, 4d11, 4d14, 4d1, 4d13, 4hf};
+        data_segments.values = {4hf, 4hf, 4hf, 4hf};
+        user_solvable = 0;
+        if (eliminateSig) {
+          state.d = state.PREPARE;
         }
     }
   }

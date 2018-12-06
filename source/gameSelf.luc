@@ -3,6 +3,8 @@ module gameSelf (
     input rst,  // reset
     input eliminate,
     input eliminatePosition[4],
+    input solve1,
+    input solve0,
     output array[6][9],
     output sound
   ) {
@@ -79,6 +81,14 @@ module gameSelf (
     
     if (eliminate) {
       solveArray.d[eliminatePosition] = 0;
+    }
+    
+    if (solve1) {
+      solveArray.d[5] = 0;
+    }
+    
+    if (solve0) {
+      solveArray.d [4] = 0;
     }
     
     mergeCounter.d = mergeCounter.q + 1;

@@ -122,11 +122,15 @@ module mojo_top_0 (
   wire [1-1:0] M_game_sound;
   reg [1-1:0] M_game_eliminate;
   reg [4-1:0] M_game_eliminatePosition;
+  reg [1-1:0] M_game_solve1;
+  reg [1-1:0] M_game_solve0;
   gameSelf_12 game (
     .clk(clk),
     .rst(game_rst),
     .eliminate(M_game_eliminate),
     .eliminatePosition(M_game_eliminatePosition),
+    .solve1(M_game_solve1),
+    .solve0(M_game_solve0),
     .array(M_game_array),
     .sound(M_game_sound)
   );
@@ -202,6 +206,8 @@ module mojo_top_0 (
     M_alu_a = 1'h0;
     M_alu_b = 1'h0;
     M_alu_alufn = 1'h0;
+    M_game_solve1 = 1'h0;
+    M_game_solve0 = 1'h0;
     game_rst = 1'h0 | rst;
     M_problem_set_problem_count = M_problem_counter_q;
     M_button0_in = user_buttons[5+0-:1];
@@ -226,7 +232,7 @@ module mojo_top_0 (
     array_sel = ~M_numbers_sel;
     shiwei = M_count_down_q / 4'ha;
     gewei = M_count_down_q - (M_count_down_q / 4'ha * 4'ha);
-    M_data_segments_values = {gewei, shiwei, M_problem_q[5+0+3-:4], M_problem_q[0+0+3-:4]};
+    M_data_segments_values = {gewei, shiwei, M_problem_q[0+0+3-:4], M_problem_q[5+0+3-:4]};
     data_seg = M_data_segments_seg;
     data_sel = ~M_data_segments_sel;
     eliminatePosition = 1'h0;
@@ -262,7 +268,7 @@ module mojo_top_0 (
         M_numbers_values = 24'hffffff;
         M_data_segments_values = 16'hffff;
         user_solvable = 1'h0;
-        if ((|user_buttons)) begin
+        if (eliminateSig) begin
           M_state_d = PREPARE_state;
         end
       end
@@ -271,6 +277,7 @@ module mojo_top_0 (
         M_numbers_values = 24'h0ccbaf;
         M_data_segments_values = 16'hffff;
         user_solvable = 1'h0;
+        game_rst = 1'h1;
         if (M_solve_button_cond_out) begin
           M_state_d = START1_state;
           M_count_down_d = 6'h32;
@@ -281,9 +288,9 @@ module mojo_top_0 (
       START1_state: begin
         M_alu_a = M_game_array[45+0+3-:4];
         M_alu_b = M_problem_q[5+0+3-:4];
-        M_alu_alufn = 6'h36;
+        M_alu_alufn = 6'h32;
         M_first_ball_solvable_d = M_alu_out;
-        if (~M_problem_q[5+4+0-:1]) begin
+        if ((M_problem_q[5+4+0-:1] == 1'h0) | (M_problem_q[5+0+3-:4] == 1'h0)) begin
           M_first_ball_solvable_d = 1'h1;
         end
         M_state_d = START2_state;
@@ -291,9 +298,9 @@ module mojo_top_0 (
       START2_state: begin
         M_alu_a = M_game_array[36+0+3-:4];
         M_alu_b = M_problem_q[0+0+3-:4];
-        M_alu_alufn = 6'h36;
+        M_alu_alufn = 6'h32;
         M_second_ball_solvable_d = M_alu_out;
-        if (~M_problem_q[0+4+0-:1]) begin
+        if ((M_problem_q[0+4+0-:1] == 1'h0) | (M_problem_q[0+0+3-:4] == 1'h0)) begin
           M_second_ball_solvable_d = 1'h1;
         end
         M_state_d = START3_state;
@@ -301,7 +308,7 @@ module mojo_top_0 (
       START3_state: begin
         M_alu_a = M_first_ball_solvable_q;
         M_alu_b = M_second_ball_solvable_q;
-        M_alu_alufn = 6'h17;
+        M_alu_alufn = 6'h18;
         M_problem_solvable_d = M_alu_out;
         M_state_d = START4_state;
       end
@@ -317,6 +324,12 @@ module mojo_top_0 (
         end
       end
       SOLVE_state: begin
+        if (M_problem_q[5+4+0-:1] == 1'h1) begin
+          M_game_solve1 = 1'h1;
+        end
+        if (M_problem_q[0+4+0-:1] == 1'h1) begin
+          M_game_solve0 = 1'h1;
+        end
         M_problem_d = M_problem_set_problem_out;
         M_count_down_d = 6'h32;
         M_state_d = NEXTPROBLEM_state;
@@ -331,9 +344,34 @@ module mojo_top_0 (
       CHECK_state: begin
         if (M_count_down_q == 1'h0) begin
           M_state_d = LOSE_state;
+        end else begin
+          if (M_problem_counter_q == 2'h3) begin
+            M_state_d = WIN_state;
+          end else begin
+            if (M_start_button_dff_q) begin
+              M_state_d = INIT_state;
+            end else begin
+              M_state_d = START1_state;
+            end
+          end
         end
-        if (M_problem_counter_q == 4'ha) begin
-          M_state_d = WIN_state;
+      end
+      LOSE_state: begin
+        M_array_led_controller_colors = 24'h333333;
+        M_numbers_values = 24'hfb50cf;
+        M_data_segments_values = 16'hffff;
+        user_solvable = 1'h0;
+        if (eliminateSig) begin
+          M_state_d = PREPARE_state;
+        end
+      end
+      WIN_state: begin
+        M_array_led_controller_colors = 24'h111111;
+        M_numbers_values = 24'hfbe1df;
+        M_data_segments_values = 16'hffff;
+        user_solvable = 1'h0;
+        if (eliminateSig) begin
+          M_state_d = PREPARE_state;
         end
       end
     endcase

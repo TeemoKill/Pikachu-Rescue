@@ -64,7 +64,7 @@ Elaborating module <gameSelf_12>.
 
 Elaborating module <randomGenerator_32>.
 WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/randomGenerator_32.v" Line 23: Result of 8-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 131: Assignment to M_game_sound ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 135: Assignment to M_game_sound ignored, since the identifier is never used
 
 Elaborating module <multi_seven_segment_13>.
 
@@ -86,14 +86,13 @@ Elaborating module <multi_led_15>.
 Elaborating module <pwm_led_39>.
 
 Elaborating module <pwm_led2_41>.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 227: Result of 6-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 228: Result of 6-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 285: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 295: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 305: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 328: Result of 16-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 342: Assignment to M_one_second_q ignored, since the identifier is never used
-WARNING:Xst:2972 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 74. All outputs of instance <start_button_cond> of block <button_4> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 233: Result of 6-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 234: Result of 6-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 292: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 302: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 312: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 341: Result of 16-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 380: Assignment to M_one_second_q ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -101,10 +100,10 @@ WARNING:Xst:2972 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/s
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v".
-INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 74: Output port <out> of the instance <start_button_cond> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 125: Output port <sound> of the instance <game> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 127: Output port <sound> of the instance <game> is unconnected or connected to loadless signal.
     Found 6-bit register for signal <M_count_down_q>.
     Found 10-bit register for signal <M_problem_q>.
+    Found 1-bit register for signal <M_start_button_dff_q>.
     Found 1-bit register for signal <M_solve_button_dff_q>.
     Found 1-bit register for signal <M_first_ball_solvable_q>.
     Found 1-bit register for signal <M_second_ball_solvable_q>.
@@ -114,9 +113,9 @@ INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sour
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
     | States             | 11                                             |
-    | Transitions        | 16                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 11                                             |
+    | Transitions        | 19                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 41                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | M_reset_cond_out (positive)                    |
     | Reset type         | synchronous                                    |
@@ -125,14 +124,14 @@ INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sour
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit subtractor for signal <M_count_down_q[5]_GND_1_o_sub_14_OUT> created at line 255.
+    Found 6-bit subtractor for signal <M_count_down_q[5]_GND_1_o_sub_14_OUT> created at line 261.
     Found 4-bit subtractor for signal <gewei> created at line 49.
-    Found 6x4-bit multiplier for signal <n0116> created at line 228.
+    Found 6x4-bit multiplier for signal <n0131> created at line 234.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
-	inferred  33 Multiplexer(s).
+	inferred  25 D-type flip-flop(s).
+	inferred  48 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <mojo_top_0> synthesized.
 
@@ -255,27 +254,27 @@ Synthesizing Unit <gameSelf_12>.
     Related source file is "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/gameSelf_12.v".
     Found 3-bit register for signal <M_mergeCounter_q>.
     Found 54-bit register for signal <M_solveArray_q>.
-    Found 4-bit subtractor for signal <mergePosition> created at line 40.
-    Found 5-bit subtractor for signal <GND_12_o_GND_12_o_sub_12_OUT> created at line 43.
-    Found 8-bit adder for signal <n0361> created at line 43.
-    Found 32-bit adder for signal <n0365> created at line 43.
-    Found 8-bit adder for signal <n0367> created at line 44.
-    Found 4-bit adder for signal <M_solveArray_q[53]_GND_12_o_add_19_OUT> created at line 44.
-    Found 8-bit adder for signal <n0491> created at line 75.
-    Found 3-bit adder for signal <M_mergeCounter_q[2]_GND_12_o_add_209_OUT> created at line 77.
-    Found 4x4-bit multiplier for signal <n0726> created at line 43.
-    Found 107-bit shifter logical right for signal <n0362> created at line 43
-    Found 32x4-bit multiplier for signal <n0364> created at line 43.
-    Found 107-bit shifter logical right for signal <n0366> created at line 43
-    Found 107-bit shifter logical right for signal <n0368> created at line 44
-    Found 4x4-bit multiplier for signal <n0734> created at line 75.
-    Found 9-bit comparator equal for signal <M_solveArray_q[53]_M_solveArray_q[53]_equal_16_o> created at line 43
+    Found 4-bit subtractor for signal <mergePosition> created at line 42.
+    Found 5-bit subtractor for signal <GND_12_o_GND_12_o_sub_12_OUT> created at line 45.
+    Found 8-bit adder for signal <n0379> created at line 45.
+    Found 32-bit adder for signal <n0383> created at line 45.
+    Found 8-bit adder for signal <n0385> created at line 46.
+    Found 4-bit adder for signal <M_solveArray_q[53]_GND_12_o_add_19_OUT> created at line 46.
+    Found 8-bit adder for signal <n0509> created at line 77.
+    Found 3-bit adder for signal <M_mergeCounter_q[2]_GND_12_o_add_209_OUT> created at line 85.
+    Found 4x4-bit multiplier for signal <n0746> created at line 45.
+    Found 107-bit shifter logical right for signal <n0380> created at line 45
+    Found 32x4-bit multiplier for signal <n0382> created at line 45.
+    Found 107-bit shifter logical right for signal <n0384> created at line 45
+    Found 107-bit shifter logical right for signal <n0386> created at line 46
+    Found 4x4-bit multiplier for signal <n0754> created at line 77.
+    Found 9-bit comparator equal for signal <M_solveArray_q[53]_M_solveArray_q[53]_equal_16_o> created at line 45
     Summary:
 	inferred   3 Multiplier(s).
 	inferred   8 Adder/Subtractor(s).
 	inferred  57 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred 306 Multiplexer(s).
+	inferred 324 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
 Unit <gameSelf_12> synthesized.
 
@@ -464,7 +463,7 @@ Macro Statistics
  4x4-bit multiplier                                    : 3
  5x4-bit multiplier                                    : 6
  6x4-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 347
+# Adders/Subtractors                                   : 348
  10-bit adder                                          : 35
  11-bit adder                                          : 34
  12-bit adder                                          : 34
@@ -478,7 +477,7 @@ Macro Statistics
  23-bit adder                                          : 2
  24-bit adder                                          : 2
  25-bit adder                                          : 2
- 25-bit subtractor                                     : 7
+ 25-bit subtractor                                     : 8
  26-bit adder                                          : 2
  27-bit adder                                          : 2
  28-bit adder                                          : 2
@@ -496,12 +495,12 @@ Macro Statistics
  7-bit adder                                           : 1
  8-bit adder                                           : 148
  9-bit adder                                           : 41
-# Registers                                            : 40
- 1-bit register                                        : 18
+# Registers                                            : 44
+ 1-bit register                                        : 21
  10-bit register                                       : 1
  18-bit register                                       : 1
  19-bit register                                       : 1
- 25-bit register                                       : 7
+ 25-bit register                                       : 8
  3-bit register                                        : 1
  4-bit register                                        : 2
  54-bit register                                       : 1
@@ -536,15 +535,15 @@ Macro Statistics
  8-bit comparator lessequal                            : 86
  9-bit comparator equal                                : 1
  9-bit comparator lessequal                            : 18
-# Multiplexers                                         : 1356
- 1-bit 2-to-1 multiplexer                              : 1088
+# Multiplexers                                         : 1391
+ 1-bit 2-to-1 multiplexer                              : 1112
  16-bit 2-to-1 multiplexer                             : 22
  16-bit 4-to-1 multiplexer                             : 3
  18-bit 2-to-1 multiplexer                             : 1
  19-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 4
- 24-bit 2-to-1 multiplexer                             : 4
- 25-bit 2-to-1 multiplexer                             : 7
+ 24-bit 2-to-1 multiplexer                             : 14
+ 25-bit 2-to-1 multiplexer                             : 8
  3-bit 2-to-1 multiplexer                              : 6
  4-bit 2-to-1 multiplexer                              : 57
  5-bit 2-to-1 multiplexer                              : 2
@@ -588,11 +587,11 @@ Unit <counter_36> synthesized (advanced).
 
 Synthesizing (advanced) Unit <gameSelf_12>.
 The following registers are absorbed into counter <M_mergeCounter_q>: 1 register on signal <M_mergeCounter_q>.
-	Multiplier <Mmult_n0734> in block <gameSelf_12> and adder/subtractor <Madd_n0491_Madd> in block <gameSelf_12> are combined into a MAC<Maddsub_n0734>.
+	Multiplier <Mmult_n0754> in block <gameSelf_12> and adder/subtractor <Madd_n0509_Madd> in block <gameSelf_12> are combined into a MAC<Maddsub_n0754>.
 Unit <gameSelf_12> synthesized (advanced).
 
 Synthesizing (advanced) Unit <mojo_top_0>.
-	Multiplier <Mmult_n0116> in block <mojo_top_0> and adder/subtractor <Msub_gewei> in block <mojo_top_0> are combined into a MAC<Maddsub_n0116>.
+	Multiplier <Mmult_n0131> in block <mojo_top_0> and adder/subtractor <Msub_gewei> in block <mojo_top_0> are combined into a MAC<Maddsub_n0131>.
 	The following registers are also absorbed by the MAC: <M_count_down_q> in block <mojo_top_0>.
 Unit <mojo_top_0> synthesized (advanced).
 
@@ -660,14 +659,14 @@ Macro Statistics
  6-bit adder                                           : 9
  6-bit subtractor                                      : 1
  8-bit adder carry in                                  : 136
-# Counters                                             : 17
+# Counters                                             : 18
  18-bit up counter                                     : 1
  19-bit up counter                                     : 1
- 25-bit down counter                                   : 7
+ 25-bit down counter                                   : 8
  3-bit up counter                                      : 1
  8-bit up counter                                      : 7
-# Registers                                            : 96
- Flip-Flops                                            : 96
+# Registers                                            : 99
+ Flip-Flops                                            : 99
 # Comparators                                          : 199
  10-bit comparator lessequal                           : 18
  11-bit comparator lessequal                           : 17
@@ -697,12 +696,12 @@ Macro Statistics
  8-bit comparator lessequal                            : 86
  9-bit comparator equal                                : 1
  9-bit comparator lessequal                            : 18
-# Multiplexers                                         : 1346
- 1-bit 2-to-1 multiplexer                              : 1088
+# Multiplexers                                         : 1380
+ 1-bit 2-to-1 multiplexer                              : 1112
  16-bit 2-to-1 multiplexer                             : 22
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 4
- 24-bit 2-to-1 multiplexer                             : 4
+ 24-bit 2-to-1 multiplexer                             : 14
  3-bit 2-to-1 multiplexer                              : 5
  4-bit 2-to-1 multiplexer                              : 57
  5-bit 2-to-1 multiplexer                              : 2
@@ -730,21 +729,21 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <M_state_q[1:4]> with gray encoding.
+Optimizing FSM <FSM_0> on signal <M_state_q[1:4]> with user encoding.
 -------------------
  State | Encoding
 -------------------
  0000  | 0000
  0001  | 0001
- 0010  | 0011
- 0011  | 0010
- 0100  | 0110
- 0101  | 0111
- 0111  | 0101
- 0110  | 0100
- 1000  | 1100
- 1010  | 1101
- 1001  | 1111
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0111  | 0111
+ 0110  | 0110
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
 -------------------
 INFO:Xst:2146 - In block <multi_led_15>, Counter <led5/M_ctr_q> <led4/M_ctr_q> <led3/M_ctr_q> <led1/M_ctr_q> <led0/M_ctr_q> <led2/M_ctr_q> are equivalent, XST will keep only <led5/M_ctr_q>.
 WARNING:Xst:2677 - Node <rg/M_random_q_3> of sequential type is unconnected in block <gameSelf_12>.
@@ -753,10 +752,11 @@ WARNING:Xst:2677 - Node <rg/M_random_q_5> of sequential type is unconnected in b
 WARNING:Xst:2677 - Node <rg/M_random_q_6> of sequential type is unconnected in block <gameSelf_12>.
 WARNING:Xst:2677 - Node <rg/M_random_q_7> of sequential type is unconnected in block <gameSelf_12>.
 WARNING:Xst:2677 - Node <rg/M_random_q_2> of sequential type is unconnected in block <gameSelf_12>.
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_1> 
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_3> 
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_3> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_0> 
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_2> 
+WARNING:Xst:2973 - All outputs of instance <a[15]_b[15]_div_3> of block <div_16u_16u> are unconnected in block <alu16_1>. Underlying logic will be removed.
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_1> 
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_3> 
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_3> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_0> 
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_2> 
 
 Optimizing unit <mojo_top_0> ...
 
@@ -789,32 +789,34 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q_43> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q_51> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q_52> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_10> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_11> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_12> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_13> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_14> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_15> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 4 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_0> <game/rg/M_random_q_0> <game/M_mergeCounter_q_0> <array_led_controller/led5/M_ctr_q_0> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_16> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 3 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_1> <game/rg/M_random_q_1> <array_led_controller/led5/M_ctr_q_1> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_2> <array_led_controller/led5/M_ctr_q_2> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_3> <array_led_controller/led5/M_ctr_q_3> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_4> <array_led_controller/led5/M_ctr_q_4> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_5> <array_led_controller/led5/M_ctr_q_5> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_6> <array_led_controller/led5/M_ctr_q_6> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_7> <array_led_controller/led5/M_ctr_q_7> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_8> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_9> 
+INFO:Xst:2261 - The FF/Latch <game/rg/M_random_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <game/M_mergeCounter_q_0> 
 INFO:Xst:2261 - The FF/Latch <game/M_solveArray_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <game/M_solveArray_q_0> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_0> <array_led_controller/led5/M_ctr_q_0> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_1> <array_led_controller/led5/M_ctr_q_1> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_2> <array_led_controller/led5/M_ctr_q_2> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_3> <array_led_controller/led5/M_ctr_q_3> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_4> <array_led_controller/led5/M_ctr_q_4> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_5> <array_led_controller/led5/M_ctr_q_5> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_6> <array_led_controller/led5/M_ctr_q_6> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_7> <array_led_controller/led5/M_ctr_q_7> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_8> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_9> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_10> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_11> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_12> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_13> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_14> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_15> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_16> 
 
 Mapping all equations...
+WARNING:Xst:2677 - Node <alu/Mmult_n0036> of sequential type is unconnected in block <mojo_top_0>.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 47.
-FlipFlop M_state_q_FSM_FFd1 has been replicated 3 time(s)
-FlipFlop M_state_q_FSM_FFd2 has been replicated 3 time(s)
-FlipFlop M_state_q_FSM_FFd3 has been replicated 2 time(s)
-FlipFlop M_state_q_FSM_FFd4 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 39.
+FlipFlop game/M_mergeCounter_q_1 has been replicated 2 time(s)
+FlipFlop game/M_mergeCounter_q_2 has been replicated 1 time(s)
+FlipFlop game/M_solveArray_q_8 has been replicated 1 time(s)
+FlipFlop game/rg/M_random_q_0 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -826,8 +828,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 287
- Flip-Flops                                            : 287
+# Registers                                            : 314
+ Flip-Flops                                            : 314
 
 =========================================================================
 
@@ -851,7 +853,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 287   |
+clk                                | BUFGP                  | 314   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -862,9 +864,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 48.100ns (Maximum Frequency: 20.790MHz)
-   Minimum input arrival time before clock: 9.983ns
-   Maximum output required time after clock: 22.231ns
-   Maximum combinational path delay: 5.183ns
+   Minimum period: 11.263ns (Maximum Frequency: 88.783MHz)
+   Minimum input arrival time before clock: 12.141ns
+   Maximum output required time after clock: 25.013ns
+   Maximum combinational path delay: 5.080ns
 
 =========================================================================

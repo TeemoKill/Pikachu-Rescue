@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -110,7 +110,7 @@ Elaborating module <gameSelf_12>.
 
 Elaborating module <randomGenerator_32>.
 WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/randomGenerator_32.v" Line 23: Result of 8-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 131: Assignment to M_game_sound ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 135: Assignment to M_game_sound ignored, since the identifier is never used
 
 Elaborating module <multi_seven_segment_13>.
 
@@ -132,14 +132,13 @@ Elaborating module <multi_led_15>.
 Elaborating module <pwm_led_39>.
 
 Elaborating module <pwm_led2_41>.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 227: Result of 6-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 228: Result of 6-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 285: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 295: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 305: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 328: Result of 16-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 342: Assignment to M_one_second_q ignored, since the identifier is never used
-WARNING:Xst:2972 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 74. All outputs of instance <start_button_cond> of block <button_4> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 233: Result of 6-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 234: Result of 6-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 292: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 302: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 312: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 341: Result of 16-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 380: Assignment to M_one_second_q ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -147,10 +146,10 @@ WARNING:Xst:2972 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/s
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v".
-INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 74: Output port <out> of the instance <start_button_cond> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 125: Output port <sound> of the instance <game> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/mojo_top_0.v" line 127: Output port <sound> of the instance <game> is unconnected or connected to loadless signal.
     Found 6-bit register for signal <M_count_down_q>.
     Found 10-bit register for signal <M_problem_q>.
+    Found 1-bit register for signal <M_start_button_dff_q>.
     Found 1-bit register for signal <M_solve_button_dff_q>.
     Found 1-bit register for signal <M_first_ball_solvable_q>.
     Found 1-bit register for signal <M_second_ball_solvable_q>.
@@ -160,9 +159,9 @@ INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sour
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
     | States             | 11                                             |
-    | Transitions        | 16                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 11                                             |
+    | Transitions        | 19                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 41                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | M_reset_cond_out (positive)                    |
     | Reset type         | synchronous                                    |
@@ -171,14 +170,14 @@ INFO:Xst:3210 - "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sour
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit subtractor for signal <M_count_down_q[5]_GND_1_o_sub_14_OUT> created at line 255.
+    Found 6-bit subtractor for signal <M_count_down_q[5]_GND_1_o_sub_14_OUT> created at line 261.
     Found 4-bit subtractor for signal <gewei> created at line 49.
-    Found 6x4-bit multiplier for signal <n0116> created at line 228.
+    Found 6x4-bit multiplier for signal <n0131> created at line 234.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
-	inferred  33 Multiplexer(s).
+	inferred  25 D-type flip-flop(s).
+	inferred  48 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <mojo_top_0> synthesized.
 
@@ -301,27 +300,27 @@ Synthesizing Unit <gameSelf_12>.
     Related source file is "G:/Github/Mojo/GameNew/work/planAhead/GameNew/GameNew.srcs/sources_1/imports/verilog/gameSelf_12.v".
     Found 3-bit register for signal <M_mergeCounter_q>.
     Found 54-bit register for signal <M_solveArray_q>.
-    Found 4-bit subtractor for signal <mergePosition> created at line 40.
-    Found 5-bit subtractor for signal <GND_12_o_GND_12_o_sub_12_OUT> created at line 43.
-    Found 8-bit adder for signal <n0361> created at line 43.
-    Found 32-bit adder for signal <n0365> created at line 43.
-    Found 8-bit adder for signal <n0367> created at line 44.
-    Found 4-bit adder for signal <M_solveArray_q[53]_GND_12_o_add_19_OUT> created at line 44.
-    Found 8-bit adder for signal <n0491> created at line 75.
-    Found 3-bit adder for signal <M_mergeCounter_q[2]_GND_12_o_add_209_OUT> created at line 77.
-    Found 4x4-bit multiplier for signal <n0726> created at line 43.
-    Found 107-bit shifter logical right for signal <n0362> created at line 43
-    Found 32x4-bit multiplier for signal <n0364> created at line 43.
-    Found 107-bit shifter logical right for signal <n0366> created at line 43
-    Found 107-bit shifter logical right for signal <n0368> created at line 44
-    Found 4x4-bit multiplier for signal <n0734> created at line 75.
-    Found 9-bit comparator equal for signal <M_solveArray_q[53]_M_solveArray_q[53]_equal_16_o> created at line 43
+    Found 4-bit subtractor for signal <mergePosition> created at line 42.
+    Found 5-bit subtractor for signal <GND_12_o_GND_12_o_sub_12_OUT> created at line 45.
+    Found 8-bit adder for signal <n0379> created at line 45.
+    Found 32-bit adder for signal <n0383> created at line 45.
+    Found 8-bit adder for signal <n0385> created at line 46.
+    Found 4-bit adder for signal <M_solveArray_q[53]_GND_12_o_add_19_OUT> created at line 46.
+    Found 8-bit adder for signal <n0509> created at line 77.
+    Found 3-bit adder for signal <M_mergeCounter_q[2]_GND_12_o_add_209_OUT> created at line 85.
+    Found 4x4-bit multiplier for signal <n0746> created at line 45.
+    Found 107-bit shifter logical right for signal <n0380> created at line 45
+    Found 32x4-bit multiplier for signal <n0382> created at line 45.
+    Found 107-bit shifter logical right for signal <n0384> created at line 45
+    Found 107-bit shifter logical right for signal <n0386> created at line 46
+    Found 4x4-bit multiplier for signal <n0754> created at line 77.
+    Found 9-bit comparator equal for signal <M_solveArray_q[53]_M_solveArray_q[53]_equal_16_o> created at line 45
     Summary:
 	inferred   3 Multiplier(s).
 	inferred   8 Adder/Subtractor(s).
 	inferred  57 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred 306 Multiplexer(s).
+	inferred 324 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
 Unit <gameSelf_12> synthesized.
 
@@ -510,7 +509,7 @@ Macro Statistics
  4x4-bit multiplier                                    : 3
  5x4-bit multiplier                                    : 6
  6x4-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 347
+# Adders/Subtractors                                   : 348
  10-bit adder                                          : 35
  11-bit adder                                          : 34
  12-bit adder                                          : 34
@@ -524,7 +523,7 @@ Macro Statistics
  23-bit adder                                          : 2
  24-bit adder                                          : 2
  25-bit adder                                          : 2
- 25-bit subtractor                                     : 7
+ 25-bit subtractor                                     : 8
  26-bit adder                                          : 2
  27-bit adder                                          : 2
  28-bit adder                                          : 2
@@ -542,12 +541,12 @@ Macro Statistics
  7-bit adder                                           : 1
  8-bit adder                                           : 148
  9-bit adder                                           : 41
-# Registers                                            : 40
- 1-bit register                                        : 18
+# Registers                                            : 44
+ 1-bit register                                        : 21
  10-bit register                                       : 1
  18-bit register                                       : 1
  19-bit register                                       : 1
- 25-bit register                                       : 7
+ 25-bit register                                       : 8
  3-bit register                                        : 1
  4-bit register                                        : 2
  54-bit register                                       : 1
@@ -582,15 +581,15 @@ Macro Statistics
  8-bit comparator lessequal                            : 86
  9-bit comparator equal                                : 1
  9-bit comparator lessequal                            : 18
-# Multiplexers                                         : 1356
- 1-bit 2-to-1 multiplexer                              : 1088
+# Multiplexers                                         : 1391
+ 1-bit 2-to-1 multiplexer                              : 1112
  16-bit 2-to-1 multiplexer                             : 22
  16-bit 4-to-1 multiplexer                             : 3
  18-bit 2-to-1 multiplexer                             : 1
  19-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 4
- 24-bit 2-to-1 multiplexer                             : 4
- 25-bit 2-to-1 multiplexer                             : 7
+ 24-bit 2-to-1 multiplexer                             : 14
+ 25-bit 2-to-1 multiplexer                             : 8
  3-bit 2-to-1 multiplexer                              : 6
  4-bit 2-to-1 multiplexer                              : 57
  5-bit 2-to-1 multiplexer                              : 2
@@ -634,11 +633,11 @@ Unit <counter_36> synthesized (advanced).
 
 Synthesizing (advanced) Unit <gameSelf_12>.
 The following registers are absorbed into counter <M_mergeCounter_q>: 1 register on signal <M_mergeCounter_q>.
-	Multiplier <Mmult_n0734> in block <gameSelf_12> and adder/subtractor <Madd_n0491_Madd> in block <gameSelf_12> are combined into a MAC<Maddsub_n0734>.
+	Multiplier <Mmult_n0754> in block <gameSelf_12> and adder/subtractor <Madd_n0509_Madd> in block <gameSelf_12> are combined into a MAC<Maddsub_n0754>.
 Unit <gameSelf_12> synthesized (advanced).
 
 Synthesizing (advanced) Unit <mojo_top_0>.
-	Multiplier <Mmult_n0116> in block <mojo_top_0> and adder/subtractor <Msub_gewei> in block <mojo_top_0> are combined into a MAC<Maddsub_n0116>.
+	Multiplier <Mmult_n0131> in block <mojo_top_0> and adder/subtractor <Msub_gewei> in block <mojo_top_0> are combined into a MAC<Maddsub_n0131>.
 	The following registers are also absorbed by the MAC: <M_count_down_q> in block <mojo_top_0>.
 Unit <mojo_top_0> synthesized (advanced).
 
@@ -706,14 +705,14 @@ Macro Statistics
  6-bit adder                                           : 9
  6-bit subtractor                                      : 1
  8-bit adder carry in                                  : 136
-# Counters                                             : 17
+# Counters                                             : 18
  18-bit up counter                                     : 1
  19-bit up counter                                     : 1
- 25-bit down counter                                   : 7
+ 25-bit down counter                                   : 8
  3-bit up counter                                      : 1
  8-bit up counter                                      : 7
-# Registers                                            : 96
- Flip-Flops                                            : 96
+# Registers                                            : 99
+ Flip-Flops                                            : 99
 # Comparators                                          : 199
  10-bit comparator lessequal                           : 18
  11-bit comparator lessequal                           : 17
@@ -743,12 +742,12 @@ Macro Statistics
  8-bit comparator lessequal                            : 86
  9-bit comparator equal                                : 1
  9-bit comparator lessequal                            : 18
-# Multiplexers                                         : 1346
- 1-bit 2-to-1 multiplexer                              : 1088
+# Multiplexers                                         : 1380
+ 1-bit 2-to-1 multiplexer                              : 1112
  16-bit 2-to-1 multiplexer                             : 22
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 4
- 24-bit 2-to-1 multiplexer                             : 4
+ 24-bit 2-to-1 multiplexer                             : 14
  3-bit 2-to-1 multiplexer                              : 5
  4-bit 2-to-1 multiplexer                              : 57
  5-bit 2-to-1 multiplexer                              : 2
@@ -776,21 +775,21 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <M_state_q[1:4]> with gray encoding.
+Optimizing FSM <FSM_0> on signal <M_state_q[1:4]> with user encoding.
 -------------------
  State | Encoding
 -------------------
  0000  | 0000
  0001  | 0001
- 0010  | 0011
- 0011  | 0010
- 0100  | 0110
- 0101  | 0111
- 0111  | 0101
- 0110  | 0100
- 1000  | 1100
- 1010  | 1101
- 1001  | 1111
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0111  | 0111
+ 0110  | 0110
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
 -------------------
 INFO:Xst:2146 - In block <multi_led_15>, Counter <led5/M_ctr_q> <led4/M_ctr_q> <led3/M_ctr_q> <led1/M_ctr_q> <led0/M_ctr_q> <led2/M_ctr_q> are equivalent, XST will keep only <led5/M_ctr_q>.
 WARNING:Xst:2677 - Node <rg/M_random_q_3> of sequential type is unconnected in block <gameSelf_12>.
@@ -799,10 +798,11 @@ WARNING:Xst:2677 - Node <rg/M_random_q_5> of sequential type is unconnected in b
 WARNING:Xst:2677 - Node <rg/M_random_q_6> of sequential type is unconnected in block <gameSelf_12>.
 WARNING:Xst:2677 - Node <rg/M_random_q_7> of sequential type is unconnected in block <gameSelf_12>.
 WARNING:Xst:2677 - Node <rg/M_random_q_2> of sequential type is unconnected in block <gameSelf_12>.
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_1> 
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_3> 
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_3> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_0> 
-INFO:Xst:2261 - The FF/Latch <M_count_down_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01161_2> 
+WARNING:Xst:2973 - All outputs of instance <a[15]_b[15]_div_3> of block <div_16u_16u> are unconnected in block <alu16_1>. Underlying logic will be removed.
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_1> 
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_3> 
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_3> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_0> 
+INFO:Xst:2261 - The FF/Latch <M_count_down_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01311_2> 
 
 Optimizing unit <mojo_top_0> ...
 
@@ -835,32 +835,34 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q_43> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q_51> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game/M_solveArray_q_52> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_10> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_11> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_12> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_13> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_14> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_15> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 4 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_0> <game/rg/M_random_q_0> <game/M_mergeCounter_q_0> <array_led_controller/led5/M_ctr_q_0> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_16> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 3 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_1> <game/rg/M_random_q_1> <array_led_controller/led5/M_ctr_q_1> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_2> <array_led_controller/led5/M_ctr_q_2> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_3> <array_led_controller/led5/M_ctr_q_3> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_4> <array_led_controller/led5/M_ctr_q_4> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_5> <array_led_controller/led5/M_ctr_q_5> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_6> <array_led_controller/led5/M_ctr_q_6> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <data_segments/ctr/M_ctr_q_7> <array_led_controller/led5/M_ctr_q_7> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_8> 
-INFO:Xst:2261 - The FF/Latch <numbers/ctr/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <data_segments/ctr/M_ctr_q_9> 
+INFO:Xst:2261 - The FF/Latch <game/rg/M_random_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <game/M_mergeCounter_q_0> 
 INFO:Xst:2261 - The FF/Latch <game/M_solveArray_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <game/M_solveArray_q_0> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_0> <array_led_controller/led5/M_ctr_q_0> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_1> <array_led_controller/led5/M_ctr_q_1> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_2> <array_led_controller/led5/M_ctr_q_2> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_3> <array_led_controller/led5/M_ctr_q_3> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_4> <array_led_controller/led5/M_ctr_q_4> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_5> <array_led_controller/led5/M_ctr_q_5> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_6> <array_led_controller/led5/M_ctr_q_6> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <numbers/ctr/M_ctr_q_7> <array_led_controller/led5/M_ctr_q_7> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_8> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_9> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_10> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_11> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_12> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_13> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_14> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_15> 
+INFO:Xst:2261 - The FF/Latch <data_segments/ctr/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <numbers/ctr/M_ctr_q_16> 
 
 Mapping all equations...
+WARNING:Xst:2677 - Node <alu/Mmult_n0036> of sequential type is unconnected in block <mojo_top_0>.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 47.
-FlipFlop M_state_q_FSM_FFd1 has been replicated 3 time(s)
-FlipFlop M_state_q_FSM_FFd2 has been replicated 3 time(s)
-FlipFlop M_state_q_FSM_FFd3 has been replicated 2 time(s)
-FlipFlop M_state_q_FSM_FFd4 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 39.
+FlipFlop game/M_mergeCounter_q_1 has been replicated 2 time(s)
+FlipFlop game/M_mergeCounter_q_2 has been replicated 1 time(s)
+FlipFlop game/M_solveArray_q_8 has been replicated 1 time(s)
+FlipFlop game/rg/M_random_q_0 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -872,8 +874,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 287
- Flip-Flops                                            : 287
+# Registers                                            : 314
+ Flip-Flops                                            : 314
 
 =========================================================================
 
@@ -896,32 +898,30 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2747
-#      GND                         : 16
-#      INV                         : 171
-#      LUT1                        : 51
-#      LUT2                        : 192
-#      LUT3                        : 129
-#      LUT4                        : 339
-#      LUT5                        : 444
-#      LUT6                        : 592
-#      MUXCY                       : 437
-#      MUXF7                       : 22
-#      VCC                         : 12
-#      XORCY                       : 342
-# FlipFlops/Latches                : 287
-#      FD                          : 14
-#      FDE                         : 175
+# BELS                             : 2203
+#      GND                         : 17
+#      INV                         : 196
+#      LUT1                        : 46
+#      LUT2                        : 222
+#      LUT3                        : 71
+#      LUT4                        : 252
+#      LUT5                        : 288
+#      LUT6                        : 562
+#      MUXCY                       : 254
+#      MUXF7                       : 30
+#      VCC                         : 13
+#      XORCY                       : 252
+# FlipFlops/Latches                : 314
+#      FD                          : 16
+#      FDE                         : 200
 #      FDR                         : 77
 #      FDRE                        : 17
 #      FDS                         : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 61
-#      IBUF                        : 8
+# IO Buffers                       : 62
+#      IBUF                        : 9
 #      OBUF                        : 53
-# DSPs                             : 1
-#      DSP48A1                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -930,24 +930,23 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             287  out of  11440     2%  
- Number of Slice LUTs:                 1918  out of   5720    33%  
-    Number used as Logic:              1918  out of   5720    33%  
+ Number of Slice Registers:             314  out of  11440     2%  
+ Number of Slice LUTs:                 1637  out of   5720    28%  
+    Number used as Logic:              1637  out of   5720    28%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2087
-   Number with an unused Flip Flop:    1800  out of   2087    86%  
-   Number with an unused LUT:           169  out of   2087     8%  
-   Number of fully used LUT-FF pairs:   118  out of   2087     5%  
-   Number of unique control sets:        31
+ Number of LUT Flip Flop pairs used:   1671
+   Number with an unused Flip Flop:    1357  out of   1671    81%  
+   Number with an unused LUT:            34  out of   1671     2%  
+   Number of fully used LUT-FF pairs:   280  out of   1671    16%  
+   Number of unique control sets:        35
 
 IO Utilization: 
  Number of IOs:                          63
- Number of bonded IOBs:                  62  out of    102    60%  
+ Number of bonded IOBs:                  63  out of    102    61%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
- Number of DSP48A1s:                      1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -970,7 +969,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 287   |
+clk                                | BUFGP                  | 314   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -981,10 +980,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 48.100ns (Maximum Frequency: 20.790MHz)
-   Minimum input arrival time before clock: 9.983ns
-   Maximum output required time after clock: 22.231ns
-   Maximum combinational path delay: 5.183ns
+   Minimum period: 11.263ns (Maximum Frequency: 88.783MHz)
+   Minimum input arrival time before clock: 12.141ns
+   Maximum output required time after clock: 25.013ns
+   Maximum combinational path delay: 5.080ns
 
 Timing Details:
 ---------------
@@ -992,188 +991,101 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 48.100ns (frequency: 20.790MHz)
-  Total number of paths / destination ports: 6621618762741653500 / 565
+  Clock period: 11.263ns (frequency: 88.783MHz)
+  Total number of paths / destination ports: 161578 / 616
 -------------------------------------------------------------------------
-Delay:               48.100ns (Levels of Logic = 103)
-  Source:            M_state_q_FSM_FFd1_1 (FF)
-  Destination:       M_problem_solvable_q (FF)
+Delay:               11.263ns (Levels of Logic = 11)
+  Source:            button5/M_gap_counter_q_17 (FF)
+  Destination:       game/M_solveArray_q_4 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: M_state_q_FSM_FFd1_1 to M_problem_solvable_q
+  Data Path: button5/M_gap_counter_q_17 to game/M_solveArray_q_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              8   0.525   1.220  M_state_q_FSM_FFd1_1 (M_state_q_FSM_FFd1_1)
-     LUT4:I0->O            7   0.254   1.138  M_state_q_M_state_q<1>1 (M_state_q<1>)
-     LUT6:I3->O            1   0.235   0.682  Mmux_M_alu_b23_2 (Mmux_M_alu_b23)
-     begin scope: 'alu:Mmux_M_alu_b23'
-     begin scope: 'alu/a[15]_b[15]_div_3:Mmux_M_alu_b23'
-     LUT2:I1->O            1   0.254   0.000  Mcompar_o<12>_lut<0>1 (Mcompar_o<12>_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Mcompar_o<12>_cy<0> (Mcompar_o<12>_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<12>_cy<1> (Mcompar_o<12>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<12>_cy<2> (Mcompar_o<12>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<12>_cy<3> (Mcompar_o<12>_cy<3>)
-     MUXCY:CI->O          19   0.023   1.261  Mcompar_o<12>_cy<4> (o<12>)
-     LUT3:I2->O            7   0.254   1.138  Mmux_a[0]_GND_4_o_MUX_300_o141 (a[13]_GND_4_o_MUX_287_o)
-     LUT4:I1->O            1   0.235   0.000  Mcompar_o<11>_lut<1> (Mcompar_o<11>_lut<1>)
-     MUXCY:S->O            1   0.215   0.000  Mcompar_o<11>_cy<1> (Mcompar_o<11>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<11>_cy<2> (Mcompar_o<11>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<11>_cy<3> (Mcompar_o<11>_cy<3>)
-     MUXCY:CI->O          22   0.023   1.334  Mcompar_o<11>_cy<4> (o<11>)
-     LUT6:I5->O            6   0.254   1.152  Mmux_a[0]_GND_4_o_MUX_354_o141 (a[13]_GND_4_o_MUX_341_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<10>_lutdi1 (Mcompar_o<10>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<10>_cy<1> (Mcompar_o<10>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<10>_cy<2> (Mcompar_o<10>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<10>_cy<3> (Mcompar_o<10>_cy<3>)
-     MUXCY:CI->O          28   0.023   1.453  Mcompar_o<10>_cy<4> (o<10>)
-     LUT6:I5->O            5   0.254   1.117  Mmux_a[0]_GND_4_o_MUX_406_o131 (a[12]_GND_4_o_MUX_394_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<9>_lutdi1 (Mcompar_o<9>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<9>_cy<1> (Mcompar_o<9>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<9>_cy<2> (Mcompar_o<9>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<9>_cy<3> (Mcompar_o<9>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<9>_cy<4> (Mcompar_o<9>_cy<4>)
-     MUXCY:CI->O          31   0.023   1.503  Mcompar_o<9>_cy<5> (o<9>)
-     LUT6:I5->O            7   0.254   1.186  Mmux_a[0]_GND_4_o_MUX_456_o121 (a[11]_GND_4_o_MUX_445_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<8>_lutdi1 (Mcompar_o<8>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<8>_cy<1> (Mcompar_o<8>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<8>_cy<2> (Mcompar_o<8>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<8>_cy<3> (Mcompar_o<8>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<8>_cy<4> (Mcompar_o<8>_cy<4>)
-     MUXCY:CI->O          38   0.023   1.620  Mcompar_o<8>_cy<5> (o<8>)
-     LUT6:I5->O            5   0.254   1.117  Mmux_a[0]_GND_4_o_MUX_504_o111 (a[10]_GND_4_o_MUX_494_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<7>_lutdi1 (Mcompar_o<7>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<7>_cy<1> (Mcompar_o<7>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<7>_cy<2> (Mcompar_o<7>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<7>_cy<3> (Mcompar_o<7>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<7>_cy<4> (Mcompar_o<7>_cy<4>)
-     MUXCY:CI->O          39   0.023   1.637  Mcompar_o<7>_cy<5> (o<7>)
-     LUT6:I5->O            7   0.254   1.186  Mmux_a[0]_GND_4_o_MUX_550_o1151 (a[9]_GND_4_o_MUX_541_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<6>_lutdi1 (Mcompar_o<6>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<6>_cy<1> (Mcompar_o<6>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<6>_cy<2> (Mcompar_o<6>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<6>_cy<3> (Mcompar_o<6>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<6>_cy<4> (Mcompar_o<6>_cy<4>)
-     MUXCY:CI->O          48   0.023   1.788  Mcompar_o<6>_cy<5> (o<6>)
-     LUT6:I5->O            5   0.254   1.117  Mmux_a[0]_GND_4_o_MUX_594_o1141 (a[8]_GND_4_o_MUX_586_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<5>_lutdi1 (Mcompar_o<5>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<5>_cy<1> (Mcompar_o<5>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<5>_cy<2> (Mcompar_o<5>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<5>_cy<3> (Mcompar_o<5>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<5>_cy<4> (Mcompar_o<5>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<5>_cy<5> (Mcompar_o<5>_cy<5>)
-     MUXCY:CI->O          47   0.023   1.771  Mcompar_o<5>_cy<6> (o<5>)
-     LUT6:I5->O            7   0.254   1.186  Mmux_a[0]_GND_4_o_MUX_636_o1131 (a[7]_GND_4_o_MUX_629_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<4>_lutdi1 (Mcompar_o<4>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<4>_cy<1> (Mcompar_o<4>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<4>_cy<2> (Mcompar_o<4>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<4>_cy<3> (Mcompar_o<4>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<4>_cy<4> (Mcompar_o<4>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<4>_cy<5> (Mcompar_o<4>_cy<5>)
-     MUXCY:CI->O          58   0.023   1.883  Mcompar_o<4>_cy<6> (o<4>)
-     LUT6:I5->O            6   0.254   1.152  Mmux_a[0]_GND_4_o_MUX_676_o1121 (a[6]_GND_4_o_MUX_670_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<3>_lutdi1 (Mcompar_o<3>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<3>_cy<1> (Mcompar_o<3>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<3>_cy<2> (Mcompar_o<3>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<3>_cy<3> (Mcompar_o<3>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<3>_cy<4> (Mcompar_o<3>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<3>_cy<5> (Mcompar_o<3>_cy<5>)
-     MUXCY:CI->O          63   0.023   1.922  Mcompar_o<3>_cy<6> (o<3>)
-     LUT6:I5->O            4   0.254   1.080  Mmux_a[0]_GND_4_o_MUX_714_o1111 (a[5]_GND_4_o_MUX_709_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<2>_lutdi1 (Mcompar_o<2>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<2>_cy<1> (Mcompar_o<2>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<2>_cy<2> (Mcompar_o<2>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<2>_cy<3> (Mcompar_o<2>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<2>_cy<4> (Mcompar_o<2>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<2>_cy<5> (Mcompar_o<2>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<2>_cy<6> (Mcompar_o<2>_cy<6>)
-     MUXCY:CI->O          42   0.023   1.687  Mcompar_o<2>_cy<7> (o<2>)
-     LUT6:I5->O            4   0.254   1.080  Mmux_a[0]_GND_4_o_MUX_750_o1101 (a[4]_GND_4_o_MUX_746_o)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<1>_lutdi1 (Mcompar_o<1>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<1>_cy<1> (Mcompar_o<1>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<1>_cy<2> (Mcompar_o<1>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<1>_cy<3> (Mcompar_o<1>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<1>_cy<4> (Mcompar_o<1>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<1>_cy<5> (Mcompar_o<1>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<1>_cy<6> (Mcompar_o<1>_cy<6>)
-     MUXCY:CI->O          16   0.023   1.182  Mcompar_o<1>_cy<7> (o<1>)
-     LUT3:I2->O            2   0.254   1.002  Mmux_n095081 (n0950<1>)
-     LUT4:I0->O            0   0.254   0.000  Mcompar_o<0>_lutdi (Mcompar_o<0>_lutdi)
-     MUXCY:DI->O           1   0.181   0.000  Mcompar_o<0>_cy<0> (Mcompar_o<0>_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<0>_cy<1> (Mcompar_o<0>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<0>_cy<2> (Mcompar_o<0>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<0>_cy<3> (Mcompar_o<0>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<0>_cy<4> (Mcompar_o<0>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<0>_cy<5> (Mcompar_o<0>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_o<0>_cy<6> (Mcompar_o<0>_cy<6>)
-     MUXCY:CI->O           4   0.235   0.804  Mcompar_o<0>_cy<7> (o<0>)
-     end scope: 'alu/a[15]_b[15]_div_3:o<0>'
-     end scope: 'alu:a[15]_b[15]_div_3_OUT<0>'
-     LUT6:I5->O            1   0.254   0.000  M_first_ball_solvable_q_glue_set (M_first_ball_solvable_q_glue_set)
-     FDRE:D                    0.074          M_first_ball_solvable_q
+     FDE:C->Q              2   0.525   1.156  M_gap_counter_q_17 (M_gap_counter_q_17)
+     LUT5:I0->O            3   0.254   1.042  out4 (out3)
+     begin scope: 'button5/rise:out3'
+     LUT6:I2->O            1   0.254   1.112  out1_1 (button5/rise/out1)
+     end scope: 'button5/rise:button5/rise/out1'
+     end scope: 'button5:out1'
+     LUT6:I1->O           12   0.254   1.068  Mmux_eliminatePosition1 (eliminatePosition<0>)
+     begin scope: 'game:eliminatePosition<0>'
+     MUXCY:DI->O           1   0.181   0.000  Maddsub_n0754_Madd1_cy<3> (Maddsub_n0754_Madd1_cy<3>)
+     XORCY:CI->O          27   0.206   1.544  Maddsub_n0754_Madd1_xor<4> (Maddsub_n0754_4)
+     LUT6:I4->O           12   0.250   1.069  Mmux_M_solveArray_d34111 (Mmux_M_solveArray_d3411)
+     LUT6:I5->O            2   0.254   0.726  Mmux_M_solveArray_d315_SW0 (N182)
+     LUT6:I5->O            1   0.254   0.790  Mmux_M_solveArray_d314_SW0 (N396)
+     LUT6:I4->O            1   0.250   0.000  Mmux_M_solveArray_d316 (M_solveArray_d<4>)
+     FDR:D                     0.074          M_solveArray_q_4
     ----------------------------------------
-    Total                     48.100ns (11.701ns logic, 36.399ns route)
-                                       (24.3% logic, 75.7% route)
+    Total                     11.263ns (2.756ns logic, 8.507ns route)
+                                       (24.5% logic, 75.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2171 / 240
+  Total number of paths / destination ports: 2873 / 267
 -------------------------------------------------------------------------
-Offset:              9.983ns (Levels of Logic = 11)
-  Source:            user_buttons<2> (PAD)
-  Destination:       game/M_solveArray_q_47 (FF)
+Offset:              12.141ns (Levels of Logic = 13)
+  Source:            user_buttons<0> (PAD)
+  Destination:       game/M_solveArray_q_4 (FF)
   Destination Clock: clk rising
 
-  Data Path: user_buttons<2> to game/M_solveArray_q_47
+  Data Path: user_buttons<0> to game/M_solveArray_q_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   1.328   0.949  user_buttons_2_IBUF (led_2_OBUF)
-     begin scope: 'button3:in'
-     LUT3:I1->O            6   0.250   1.306  Mmux_M_rise_in11 (M_rise_in)
-     end scope: 'button3:M_rise_in'
-     LUT6:I1->O           22   0.254   1.333  Mmux_eliminatePosition1 (eliminatePosition<0>)
+     IBUF:I->O             5   1.328   1.117  user_buttons_0_IBUF (led_0_OBUF)
+     begin scope: 'button5:in'
+     LUT4:I0->O            2   0.254   1.156  out5_SW0 (N266)
+     begin scope: 'button5/rise:N266'
+     LUT6:I1->O            1   0.254   1.112  out1_1 (button5/rise/out1)
+     end scope: 'button5/rise:button5/rise/out1'
+     end scope: 'button5:out1'
+     LUT6:I1->O           12   0.254   1.068  Mmux_eliminatePosition1 (eliminatePosition<0>)
      begin scope: 'game:eliminatePosition<0>'
-     MUXCY:DI->O           1   0.181   0.000  Maddsub_n0734_Madd1_cy<3> (Maddsub_n0734_Madd1_cy<3>)
-     MUXCY:CI->O           0   0.023   0.000  Maddsub_n0734_Madd1_cy<4> (Maddsub_n0734_Madd1_cy<4>)
-     XORCY:CI->O          18   0.206   1.235  Maddsub_n0734_Madd1_xor<5> (Maddsub_n0734_5)
-     LUT2:I1->O            5   0.254   0.949  Mmux_M_solveArray_d43211 (Mmux_M_solveArray_d4321)
-     LUT6:I4->O            1   0.250   1.137  Mmux_M_solveArray_d421 (Mmux_M_solveArray_d42)
-     LUT6:I0->O            1   0.254   0.000  Mmux_M_solveArray_d425 (M_solveArray_d<47>)
-     FDR:D                     0.074          M_solveArray_q_47
+     MUXCY:DI->O           1   0.181   0.000  Maddsub_n0754_Madd1_cy<3> (Maddsub_n0754_Madd1_cy<3>)
+     XORCY:CI->O          27   0.206   1.544  Maddsub_n0754_Madd1_xor<4> (Maddsub_n0754_4)
+     LUT6:I4->O           12   0.250   1.069  Mmux_M_solveArray_d34111 (Mmux_M_solveArray_d3411)
+     LUT6:I5->O            2   0.254   0.726  Mmux_M_solveArray_d315_SW0 (N182)
+     LUT6:I5->O            1   0.254   0.790  Mmux_M_solveArray_d314_SW0 (N396)
+     LUT6:I4->O            1   0.250   0.000  Mmux_M_solveArray_d316 (M_solveArray_d<4>)
+     FDR:D                     0.074          M_solveArray_q_4
     ----------------------------------------
-    Total                      9.983ns (3.074ns logic, 6.909ns route)
-                                       (30.8% logic, 69.2% route)
+    Total                     12.141ns (3.559ns logic, 8.582ns route)
+                                       (29.3% logic, 70.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 2967967 / 44
+  Total number of paths / destination ports: 6657408 / 44
 -------------------------------------------------------------------------
-Offset:              22.231ns (Levels of Logic = 19)
-  Source:            M_state_q_FSM_FFd3 (FF)
+Offset:              25.013ns (Levels of Logic = 21)
+  Source:            M_state_q_FSM_FFd2 (FF)
   Destination:       array_led<15> (PAD)
   Source Clock:      clk rising
 
-  Data Path: M_state_q_FSM_FFd3 to array_led<15>
+  Data Path: M_state_q_FSM_FFd2 to array_led<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             91   0.525   2.594  M_state_q_FSM_FFd3 (M_state_q_FSM_FFd3)
-     begin scope: 'array_led_controller:M_state_q_FSM_FFd3'
-     LUT6:I0->O            1   0.254   0.000  Maddsub_n0056_Madd1_lut<3> (Maddsub_n0056_Madd1_lut<3>)
+     FDR:C->Q             62   0.525   2.190  M_state_q_FSM_FFd2 (M_state_q_FSM_FFd2)
+     LUT4:I0->O           13   0.254   1.326  Mmux_M_array_led_controller_colors1321 (Mmux_M_array_led_controller_colors132)
+     LUT5:I2->O           28   0.235   1.453  Mmux_M_array_led_controller_colors131 (M_array_led_controller_colors<20>)
+     begin scope: 'array_led_controller:colors<20>'
+     LUT6:I5->O            1   0.254   0.000  Maddsub_n0056_Madd1_lut<3> (Maddsub_n0056_Madd1_lut<3>)
      MUXCY:S->O            1   0.215   0.000  Maddsub_n0056_Madd1_cy<3> (Maddsub_n0056_Madd1_cy<3>)
      MUXCY:CI->O           0   0.023   0.000  Maddsub_n0056_Madd1_cy<4> (Maddsub_n0056_Madd1_cy<4>)
      XORCY:CI->O          27   0.206   1.712  Maddsub_n0056_Madd1_xor<5> (Maddsub_n0056_6)
      LUT4:I0->O           11   0.254   1.147  Sh44831 (n0032<94>)
      begin scope: 'array_led_controller/led5:color<22>'
      begin scope: 'array_led_controller/led5/color[23]_PWR_26_o_div_0:a<6>'
-     LUT4:I2->O            7   0.250   1.365  Mmux_a[0]_a[7]_MUX_3789_o151 (Madd_a[7]_GND_24_o_add_11_OUT[7:0]_Madd_lut<5>)
+     LUT4:I2->O            7   0.250   1.365  Mmux_a[0]_a[7]_MUX_3807_o151 (Madd_a[7]_GND_24_o_add_11_OUT[7:0]_Madd_lut<5>)
      LUT6:I0->O            2   0.254   0.726  Madd_a[7]_GND_24_o_add_11_OUT[7:0]_Madd_cy<5>11 (Madd_a[7]_GND_24_o_add_11_OUT[7:0]_Madd_cy<5>)
      LUT6:I5->O            6   0.254   1.331  Mmux_n026371 (n0263<6>)
-     LUT6:I0->O            4   0.254   1.080  o<2>11 (o<2>)
-     LUT5:I1->O            2   0.254   1.156  Mmux_n026781 (n0267<7>)
-     LUT6:I1->O            4   0.254   1.259  o<1>1 (o<1>)
+     LUT6:I0->O            3   0.254   1.196  Mmux_n026731 (Madd_a[7]_GND_24_o_add_15_OUT[7:0]_Madd_lut<2>)
+     LUT5:I0->O            1   0.254   0.958  o<1>1_SW0 (N156)
+     LUT6:I2->O            4   0.254   1.259  o<1>1 (o<1>)
      end scope: 'array_led_controller/led5/color[23]_PWR_26_o_div_0:o<1>'
      end scope: 'array_led_controller/led5:colors<17>'
      LUT6:I0->O            1   0.254   0.790  M_led5_rgb_pulse<0>1 (M_led5_rgb_pulse<0>)
@@ -1183,26 +1095,26 @@ Offset:              22.231ns (Levels of Logic = 19)
      end scope: 'array_led_controller:led_pulse<15>'
      OBUF:I->O                 2.912          array_led_15_OBUF (array_led<15>)
     ----------------------------------------
-    Total                     22.231ns (6.917ns logic, 15.314ns route)
-                                       (31.1% logic, 68.9% route)
+    Total                     25.013ns (7.406ns logic, 17.607ns route)
+                                       (29.6% logic, 70.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Delay:               5.183ns (Levels of Logic = 2)
-  Source:            user_buttons<1> (PAD)
-  Destination:       led<1> (PAD)
+Delay:               5.080ns (Levels of Logic = 2)
+  Source:            user_buttons<3> (PAD)
+  Destination:       led<3> (PAD)
 
-  Data Path: user_buttons<1> to led<1>
+  Data Path: user_buttons<3> to led<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.328   0.943  user_buttons_1_IBUF (led_1_OBUF)
-     OBUF:I->O                 2.912          led_1_OBUF (led<1>)
+     IBUF:I->O             5   1.328   0.840  user_buttons_3_IBUF (led_3_OBUF)
+     OBUF:I->O                 2.912          led_3_OBUF (led<3>)
     ----------------------------------------
-    Total                      5.183ns (4.240ns logic, 0.943ns route)
-                                       (81.8% logic, 18.2% route)
+    Total                      5.080ns (4.240ns logic, 0.840ns route)
+                                       (83.5% logic, 16.5% route)
 
 =========================================================================
 
@@ -1214,20 +1126,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   48.100|         |         |         |
+clk            |   11.263|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 25.48 secs
+Total CPU time to Xst completion: 25.71 secs
  
 --> 
 
-Total memory usage is 279652 kilobytes
+Total memory usage is 279076 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   35 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
 Number of infos    :   28 (   0 filtered)
 
