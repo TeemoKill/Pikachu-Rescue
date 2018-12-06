@@ -1,6 +1,6 @@
 module button #(
-    GAP = 200 : GAP > 0,
-    CLOCK_FREQUENCY = 50000000 / 16
+    GAP = 500 : GAP > 0,
+    CLOCK_FREQUENCY = 50000000
   )(
     input clk,  // clock
     input in,  // reset

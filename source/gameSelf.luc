@@ -3,7 +3,6 @@ module gameSelf (
     input rst,  // reset
     input eliminate,
     input eliminatePosition[4],
-    input random[32],
     output array[6][9],
     output sound
   ) {
@@ -18,7 +17,7 @@ module gameSelf (
     .rst(rst){
       dff solveArray[SOLVELENGTH][9];
       dff mergeCounter[$clog2(SOLVELENGTH)];
-      
+      randomGenerator rg;
     }
   }
 
@@ -69,7 +68,7 @@ module gameSelf (
     
     if (~solveArray.q[0][8]) {
       solveArray.d[0][8] = 1;
-      solveArray.d[0][7:4] = random - (random / 4 * 4);
+      solveArray.d[0][7:4] = rg.out;
       solveArray.d[0][3:0] = 1;
     }
     

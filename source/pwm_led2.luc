@@ -1,4 +1,4 @@
-module pwm_led #(
+module pwm_led2 #(
     WIDTH = 8 : WIDTH > 0 // resolution of PWM counter
   )(
     input clk,  // clock
@@ -17,7 +17,7 @@ module pwm_led #(
 
   always {
   
-    colors[23:16] = color[23:16] / MUL;
+    colors[23:16] = color[23:16];
     colors[15:8] = color[15:8] / MUL;
     colors[7:0] = color[7:0] / MUL;
     
